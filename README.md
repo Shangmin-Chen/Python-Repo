@@ -2,6 +2,10 @@
 Python Journey
 uploading code from my past projects... 
 
-Particular codes you should see: HealthScreenBotV2, Tic Tac Toe, Number guessing game, Magic 8 ball
+Projects from school:
+Tic tac toe
+Magic 8 ball
+
+Others are personal projects
 
 THESE ARE PROJECTS IN MY PYCHARM ENVIRONMENT.
