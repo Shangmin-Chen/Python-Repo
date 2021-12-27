@@ -2,8 +2,8 @@ import requests
 import json
 from PIL import Image, ImageFont, ImageDraw
 from datetime import date
-
-api_key = "59d0def3cb08927692cbc6416900eab4"
+# register and enter a key
+api_key = ""
 position = [300, 430, 555, 690, 825]
 
 # list of cities
