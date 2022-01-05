@@ -17,8 +17,9 @@ def selection(link):
     itag = tags[-1]
     stream = yt.streams.get_by_itag(itag)
     stream.download()
+    print("done! If your using replit, please wait approx. 1 min for the repl.it server to process the video!")
     return 0
-
+    
   elif options.lower() == "audio":
     for i in yt.streams.filter(only_audio=True):
       info = str(i).lstrip("<Stream: itag=")
@@ -28,8 +29,9 @@ def selection(link):
     itag = tags[-1]
     stream = yt.streams.get_by_itag(itag)
     stream.download()
+    print("done!")
     return 0
+    
   else: 
     print("I don't understand...\n")
     selection(link)
-  print("done")
