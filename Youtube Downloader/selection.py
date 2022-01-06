@@ -5,10 +5,9 @@ def selection(link):
   try:
     yt = YouTube(link)
   except:
-    print("Invalid link. ")
     return 1
   options = input("Do you want audio or video? (audio/ video) ")
-  if options.lower() == "video":
+  if options.lower() == "video" or options.lower() == "v":
     for i in yt.streams.filter(progressive=True):
       info = str(i).lstrip("<Stream: itag=")
       info = info[:4]
@@ -17,10 +16,10 @@ def selection(link):
     itag = tags[-1]
     stream = yt.streams.get_by_itag(itag)
     stream.download()
-    print("done! If you are using replit, please wait approx. 1 min for the repl.it server to process the video!")
+    print("done! If you are using replit, please wait time depending on video length for the repl.it server to process the video!")
     return 0
     
-  elif options.lower() == "audio":
+  elif options.lower() == "audio" or options.lower() == "a":
     for i in yt.streams.filter(only_audio=True):
       info = str(i).lstrip("<Stream: itag=")
       info = info[:4]
